@@ -1,0 +1,1048 @@
+/* roboto-300 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('fonts/roboto-v20-latin_cyrillic-300.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('fonts/roboto-v20-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto-v20-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto-v20-latin_cyrillic-300.woff') format('woff'), /* Modern Browsers */
+       url('fonts/roboto-v20-latin_cyrillic-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/roboto-v20-latin_cyrillic-300.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/roboto-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/roboto-v20-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/roboto-v20-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('fonts/roboto-v20-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto-v20-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+       url('fonts/roboto-v20-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/roboto-v20-latin_cyrillic-500.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/roboto-v20-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('fonts/roboto-v20-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('fonts/roboto-v20-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/roboto-v20-latin_cyrillic-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-900 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('fonts/roboto-v20-latin_cyrillic-900.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Black'), local('Roboto-Black'),
+       url('fonts/roboto-v20-latin_cyrillic-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto-v20-latin_cyrillic-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto-v20-latin_cyrillic-900.woff') format('woff'), /* Modern Browsers */
+       url('fonts/roboto-v20-latin_cyrillic-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/roboto-v20-latin_cyrillic-900.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto; 
+  min-width: 320px;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #fbfbfb;
+}
+
+/*Блокировка скролла при открытом меню*/
+  body.lock {
+    overflow: hidden;
+    /*Для мобильных устройств*/
+    position: fixed;
+    width: 100%;
+  }
+
+h2 {
+  font-size: 72px;
+  color: #1f1f24;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 54px;
+  color: #1f1f24;
+  font-weight: 700;
+  margin: 0 0 45px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #1f1f24;
+}
+
+    a:hover {
+      text-decoration: underline;
+      color: #fc557c;
+    } 
+
+/*Контейнер ограничивающий ширину*/
+.fixed-container {
+  max-width: 1170px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+/*Обнуление*/
+*,*:before,*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*Полупрозрачная подложка всплывающего окна - отключение скролла*/
+.popup-container {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff90;
+  z-index: 60;
+}
+
+/*Всплывающее окно*/
+.popup {
+  width: 300px;
+  height: 350px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px 0 #11111130;
+  position: relative;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*Кнопка удаления всплывающего окна*/
+.popup__del {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+/*Иконка телефона по центру*/
+.popup__icon {
+  width: 80px;
+  height: auto;
+  margin: 60px auto 40px;
+}
+
+/*Заголовок*/
+.popup__title {
+  color: #1f1f24;
+  font-size: 18px;
+  font-weight: 500;
+  width: 80%;
+  margin: 10px auto;
+}
+
+/*Форма для ввода номера телефона*/
+.get-contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+/*Ввод телефона*/
+.get-contact__input {
+  font-size: 16px;
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #fc557c;
+}
+
+/*Кнопка отправить*/
+.get-contact__submit {
+  width: 27%;
+  padding: 10px;
+  border: 1px solid #fc557c;
+  background-color: #fc557c;
+  cursor: pointer;
+}
+
+/*Оформление при нажатии на кнопку отправить*/
+.get-contact__submit.done {
+  border: 1px solid #4cd237;
+  background-color: #4cd237;
+  box-shadow: 0 2px 7px 0 #4cd237;
+  transition: all 0.3s ease 0s;
+}
+
+.get-contact__submit:hover {
+  box-shadow: 0 2px 7px 0 #fc557cd9;
+}
+
+/*Кнопка отправить - шрифтовая иконка, вместо текста*/
+.get-contact__submit.material-icons {
+  color: #ffffff;
+  margin-right: 0;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  padding: 30px 0;
+}
+
+/*Фиксированный хедер - подложка*/
+.header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fbfbfb;
+}
+
+/*Фиксированный хедер - расположение элементов*/
+.header__body{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Фиксированный хедер - скрытие значка мобильного меню*/
+.header__burger{
+  display: none;
+}
+
+/*Контейнер меню, к которому будет привязываться анимация*/
+.header__menu{
+
+}
+
+/*Строчное расположение элементов меню*/
+.header__list{
+  display: flex;
+}
+
+.header__list li{
+  list-style: none;
+  margin:0 30px 0 0;
+}
+
+.header__link {
+  text-decoration: none;
+  font-size: 14px;
+    color: #1f1f24;
+}
+
+.header__link:hover {
+  color: #fc557c;
+}
+
+/*Номер телефона и кнопка обратного звонка*/
+.phone-call {
+  width: 100%;
+  max-width: 470px;
+  min-width: 218px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Телефонный номер*/
+.phone-call__phone-header {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f1f24;
+}
+
+/*Кнопка обратного звонка*/
+.phone-call__call{
+  width: 100%;
+  height: 45px;
+  max-width: 250px;
+  min-width: 210px;
+  color: #fc557c;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #fc557c;
+  cursor: pointer;
+}
+
+.first-screen {
+  margin: 120px 0 0;
+  display: flex;
+  flex-direction: row;
+  background-image: url("img/elipse.png");
+  background-repeat: no-repeat;
+  background-position: 120%;
+  background-size: contain;
+}
+
+.first-screen .fixed-container {
+  display: flex;
+  flex-direction: row;
+}
+    /*Заголовок, дескриптор и кнопка на первом экране*/
+    .title-about-me{
+      font-size: 25px;
+      color: #8993ad;
+      display: flex;
+      flex-direction: column;
+      height: 50%;
+      width: 100%;
+      min-width: 580px;
+      margin: auto 0;
+    }
+
+    /*Кнопка - узнать больше*/
+    .button {
+      width: 280px;
+      min-height: 60px;
+      margin-top: 45px;
+      background-color: #ff4e2e;
+      color: white;
+      font-size: 14px;
+      border: 1px solid white;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    /*Контейнер для элементов анимации*/
+    .animation-container {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 40%;
+      left: 30%;
+      z-index: 0;
+    }
+
+      /*Элементы анимации*/
+      .animation-container__item {
+        width: 95px;
+        height: 55px;
+        position: absolute;
+      }
+
+          /*{}*/
+          .curly_brace.active {
+            background-image: url("img/curly_brace.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: translate(-250px, -150px) rotate(-30deg);
+            transition: all 0.8s cubic-bezier(0.46, 0.06, 0.21, 1.12) 0s;
+          }
+
+          /*#*/
+          .lattice.active {
+            background-image: url("img/lattice.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: translate(250px, -100px) rotate(30deg);
+            transition: all 0.6s cubic-bezier(0.46, 0.06, 0.21, 1.12) 0s;
+          }
+
+          /*</>*/
+          .html_close.active {
+            background-image: url("img/html_close.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: translate(-250px, 250px) rotate(-30deg);
+            transition: all 0.5s cubic-bezier(0.46, 0.06, 0.21, 1.12) 0s;
+          }
+
+          .div.active {
+            background-image: url("img/div.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: translate(200px, 200px) rotate(30deg);
+            transition: all 0.7s cubic-bezier(0.46, 0.06, 0.21, 1.12) 0s;
+          }
+
+    /*Контейнер для портрета*/
+    #img {
+      width: 82%;
+      height: auto;
+      display: flex;
+    }
+
+        #img img {
+          width: 100%;
+          min-width: 240px;
+          height: auto;
+        }
+
+.second-screen {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.second-screen .fixed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 25px;
+}
+
+/*Блок с колонками услуг*/
+.services {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+    
+    /*Колонка о услуге*/
+    .services-item {
+      color: #8993ad;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 260px;
+      margin: 80px 16px;
+
+    }
+
+    /*Иконка услуги*/
+    .services-item__icon {
+      min-height: 74px;
+      min-width: 80px;
+      margin-bottom: 25px;
+    }
+
+    /*Текст о услуги*/
+    .services-item__text {
+      max-width: 280px;
+    }
+
+    #landing {
+      background: url("img/icons.gif") 0px 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #adaptivity {
+      background: url("img/icons.gif") -85px 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #frontend {
+      background: url("img/icons.gif") -170px 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #support {
+      background: url("img/icons.gif") -255px 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+.third-screen {
+  padding: 60px 0;
+  min-width: 0;
+}
+
+.third-screen .fixed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+
+    .slider {
+      min-width: 0;
+      width: 100%;
+      max-width: 1170px;
+      position: relative;
+      padding: 40px 30px;
+    }
+
+    /*Контейнер с фото*/
+    .slider__item {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /*Фотография на слайдере*/
+    .slider__item img {
+      width: 95%;
+      max-width: 95%; /* Отступ внутри слайера*/
+      height: auto;
+      margin: 0 auto; /*Выравнивание фото по центру внутри блока*/
+    }
+
+    /*Описание к фото*/
+    .slider__text {
+      margin-top: 10px;
+      color: #8993ad;
+      font-size: 20px;
+    }
+
+    .slider .slick-arrow {
+      position: absolute;
+      top: 40%;
+      z-index: 10;
+      font-size: 0;
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      border: none;
+      box-shadow: 0 0 5px 5px #11111110;
+      cursor: pointer;
+    }
+
+    .slider .slick-arrow.slick-prev {
+      left: 0;
+      background-image: url("img/arrow.png");
+    }
+
+    .slider .slick-arrow.slick-next {
+      right: 0;
+      background-image: url("img/arrow.png");
+      transform: rotate(180deg);
+    }
+
+    .slider .slick-dots{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slider .slick-dots li{
+      list-style: none;
+    }
+
+    .slider .slick-dots li.slick-active button{
+      background-color: #ff4e2e;
+    }
+
+    .slider .slick-dots li button{
+      width: 18px;
+      height: 18px;
+      border: none;
+      border-radius: 50%;
+      font-size: 0;
+      margin: 0 15px;
+      cursor: pointer;
+    }
+
+    /*Скрывает фото слайдера, которые выходят за границы fixed container*/
+    .slick-list {
+      overflow: hidden;
+    }
+
+    /*Выравнивает фотографии в линию*/
+    .slick-track{
+      display: flex;
+    }
+
+.fourth-screen {
+  width: 100%;
+  min-height: 195px;
+  max-height: 450px;
+  padding: 85px 0;
+  margin: 60px 0;
+  background: linear-gradient(to right top, #ff8f5a, #ff2f96);
+}
+
+.fourth-screen .fixed-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+    .fourth-screen__title {
+      width: 100%;
+      max-width: 960px;
+      color: white;
+      font-size: 45px;
+      font-weight: 700;
+      padding-bottom: 40px;
+    }
+
+    .fourth-screen__descriptor {
+      width: 100%;
+      max-width: 760px;
+      color: white;
+      font-size: 18px; 
+    }
+
+footer .fixed-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.menu {
+  padding: 20px 20px 0;
+}
+
+.menu__items {
+  margin-bottom: 16px;
+}
+
+/*Блок с телефоном и почтой*/
+.contact {
+  font-size: 25px;
+  padding: 20px;
+}
+
+    .contact__item {
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+    }
+
+        /*Оформление шрифтовых иконок google*/
+        .material-icons {
+          color: #ff2f96;
+          margin-right: 20px;
+        }
+
+/*Блок с кнопкой заказать звонок и иконками соц.сетей*/
+.calltoaction {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 20px;
+}
+
+.calltoaction__call {
+  margin-bottom: 20px;
+}
+
+    .social {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .social__icon {
+      width: 35px;
+      height: 35px;
+    }
+
+        #vk {
+          background: url("img/icons.gif") -342px 0;
+          background-repeat: no-repeat;
+        }
+
+        #fb {
+          background: url("img/icons.gif") -377px 0;
+          background-repeat: no-repeat;
+        }
+
+        #tw {
+          background: url("img/icons.gif") -342px -39px;
+          background-repeat: no-repeat;
+        }
+
+        #in {
+          background: url("img/icons.gif") -377px -39px;
+          background-repeat: no-repeat;
+        }
+
+@media (max-width: 1235px) {
+
+  /*Изменение положения фона для корректной адаптивности*/
+  .first-screen {
+    background-position: top right
+  }
+
+  /*Колонка о услуге - ширина для дальнейшей адаптивности*/
+ .services-item {
+    width: 34%;
+  } 
+}
+
+@media (max-width: 1100px) {
+
+  /*Выравнивание для колонок об услугах, расположенных в 2 ряда*/
+  .services {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 1030px) {
+
+  /*Заголовок на 1 экранне*/
+  h2 {
+    font-size: 49px;
+  }
+
+  .title-about-me {
+    font-size: 20px;
+    color: #8993ad;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    min-width: 320px;
+  }
+
+/*Контейнер для элементов анимации*/
+    .animation-container {
+      top: 20%;
+    }
+
+        /*#*/
+        .lattice.active {
+          transform: translate(120px, -100px) rotate(30deg);
+        }
+
+        .div.active {
+          transform: translate(120px, 200px) rotate(30deg);
+        }
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    padding: 20px 0;
+  }
+
+  .header:before {
+    z-index: 3;
+  }
+
+  /*Иконка меню*/
+  .header__burger{
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 21px;
+    z-index: 4;
+  }
+
+  /*Иконка меню - центральная полоса*/
+  .header__burger span {
+    background-color: #fc557c;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 40%;
+    transition: all 0.3s ease 0s;
+  }
+
+  /*Иконка меню: before - верхня полоса; after - нижняя полоса*/
+  .header__burger:before,
+  .header__burger:after{
+    content: '';
+    background-color: #fc557c;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  /*Иконка меню - расположение верхней полосы*/
+  .header__burger:before {
+    top: 0;
+  }
+
+  /*Иконка меню - расположение нижней полосы полосы*/
+  .header__burger:after {
+    bottom: 0;
+  }
+
+  /*Иконка меню - удаление центральной полосы при нажатии*/
+  .header__burger.active span {
+    transform: scale(0);
+  }
+
+  /*Иконка меню - поворот верхней полосы при нажатии*/
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 45%;
+  }
+
+  /*Иконка меню - поворот нижней полосы при нажатии*/
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 45%;
+  }
+
+  /*Мобильное меню*/
+  .header__menu{
+    position: fixed;
+    top: -120%;
+    width: 110%;/*Убирает полоску слева*/
+    height: 100%;
+    background-color: #ffffffe8;
+    padding: 80px 0 0 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  /*Мобильное меню - появление при нажатии*/
+  .header__menu.active {
+    top: 0;
+    left: 0;
+  }
+
+  /*Убираем flex у элементов меню*/
+  .header__list {
+    display: block;
+    padding: 0 20px;
+  }
+
+  /*Добавляем нижний отступ элементам меню*/
+  .header__list li {
+    margin: 20px 0 0 0;
+  }
+
+  /*Шрифт элементов мобильного меню - повышаем юзабилити*/
+  .header__list a {
+    font-size: 18px;
+  }
+
+  /**/
+  .phone-call {
+    width: 30%;
+    z-index: 4;
+  }
+
+  /*Кнопка заказать звонок - круглая иконка*/
+  .phone-call__call.mobile {
+    font-size: 0;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: url("img/call.png") 50% 50%;
+    background-size: 55%;
+    background-repeat: no-repeat;
+  }
+
+  /*Стиль для иконки в кнопке заказать звонок*/
+  .phone-call__call.material-icons {
+    font-size: 14px;
+    margin-right: 0;
+  }
+
+  .first-screen {
+    background-position: top center;
+    background-size: auto 378px;
+  }
+
+      .first-screen .fixed-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       } 
+
+      #img {
+        width: 240px;
+        height: 317.64px;
+        display: flex;
+        justify-content: center;
+        order: -1;
+      }
+
+      #img img {
+        height: auto;
+    }
+
+      .title-about-me {
+        font-size: 16px;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+    /*Изменено расположение блока с элементами анимации*/
+    .animation-container {
+      top: 25%;
+      left: 55%;
+    }
+
+          /*{}*/
+          .curly_brace.active {
+            transform: translate(-300%, -200%) rotate(-30deg);
+          }
+
+          /*#*/
+          .lattice.active {
+            transform: translate(180%, -200%) rotate(30deg);
+          }
+
+          /*</>*/
+          .html_close.active {
+            transform: translate(-330%, 250%) rotate(-30deg);
+          }
+
+          .div.active {
+            transform: translate(170%, 300%) rotate(30deg);
+          }
+}
+
+@media (max-width: 648px) {
+  h2 {
+    font-size: 48px;
+  }
+
+  /*Фиксация размера фона*/
+  .first-screen {
+    background-size: auto 318px;
+  }
+
+      #img img {
+        width: 240px;
+        height: 317.64px;
+    }
+
+  .services-item {
+    width: 50%;
+    margin: 25px;
+  }
+
+   .third-screen {
+    text-align: center;
+  }
+
+      .third-screen .button {
+        margin-top: 40px;
+      }
+
+  .fourth-screen__title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 470px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  /*Изменено расположение блока с элементами анимации*/
+  .animation-container {
+    top: 30%;
+    left: 55%;
+  }
+
+      /*Уменьшен размер иконок, т.к. при большем размере начинает съезжать основной контент в бок*/
+      .animation-container__item {
+        width: 80px;
+      }
+
+          /*{}*/
+          .curly_brace.active {
+            transform: translate(-230%, -230%) rotate(-30deg);
+          }
+
+          /*#*/
+          .lattice.active {
+            transform: translate(90%, -230%) rotate(30deg);
+          }
+
+          /*</>*/
+          .html_close.active {
+            transform: translate(-230%, 290%) rotate(-30deg);
+          }
+
+          .div.active {
+            transform: translate(90%, 300%) rotate(30deg);
+          }
+
+  .fourth-screen {
+    margin: 0 0 60px;
+  }
+
+  .fourth-screen__title {
+    font-size: 27px;
+  }
+
+  .fourth-screen__descriptor {
+    font-size: 15px;
+  }
+
+  .contact {
+    color: #8993ad;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  /*Изменено расположение блока с элементами анимации*/
+  .animation-container {
+    top: 30%;
+    left: 55%;
+  }
+
+      /*Уменьшен размер иконок, т.к. при большем размере начинает съезжать основной контент в бок*/
+      .animation-container__item {
+        width: 60px;
+        height: 40px;
+      }
+
+          /*{}*/
+          .curly_brace.active {
+            transform: translate(-250%, -200%) rotate(-30deg);
+          }
+
+          /*#*/
+          .lattice.active {
+            transform: translate(120%, -200%) rotate(30deg);
+          }
+
+          /*</>*/
+          .html_close.active {
+            transform: translate(-250%, 600%) rotate(-30deg);
+          }
+
+          .div.active {
+            transform: translate(120%, 600%) rotate(30deg);
+          }
+}

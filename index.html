@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Никита Тищенко - Python разработчик</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Google fonts icon-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<div class="popup-container">
+		<div class="popup">
+			<button class="popup__del material-icons">clear</button>
+			<div class="popup__icon"><img src="img/phone.png"></div>
+			<span class="popup__title">Оставьте свой номер телефона и я перезвоню вам в ближайшее время!</span>
+			<div class="get-contact">
+				<input type="text" name="phone-number" class="get-contact__input">
+				<button class="get-contact__submit material-icons">send</button>
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<div class="fixed-container">
+			<div class="header__body">
+				<!--Иконка мобильного меню-->
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li>
+							<a href="" class="header__link">Услуги</a>
+						</li>
+						<li>
+							<a href="" class="header__link">Портфолио</a>
+						</li>
+						<li>
+							<a href="" class="header__link">Стоимость</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="phone-call">
+					<div class="phone-call__phone-header">+7 (9088) 91-82-90</div>
+					<button class="phone-call__call mobile">Заказать звонок</button>
+				</div>
+			</div>
+		</div>		
+	</header>
+	<main>
+		<div class="first-screen" id="first-screen">
+			<div class="fixed-container">
+				<div class="title-about-me">
+					<h2>Никита Тищенко</h2>
+					Python разработчик и веб-верстальщик
+					<button class="button">Узнать больше</button>
+					
+				</div>
+				<div id="img"><img src="img/man.png"></div>
+			</div>
+			<!--Анимация на 1 экране-->
+			<div class="animation-container">
+				<div class="curly_brace animation-container__item"></div>
+				<div class="lattice animation-container__item"></div>
+				<div class="html_close animation-container__item"></div>
+				<div class="div animation-container__item"></div>
+			</div>
+		</div>
+		<div class="second-screen" id="second-screen">
+			<div class="fixed-container">
+				<h3>Что я делаю</h3>
+				<div class="services">
+					<div class="services-item">
+						<div id="landing" class="services-item__icon"></div>
+						<span class="services-item__text">Вёрстка лендинг–страниц и сайтов любой сложности</span>
+					</div>
+					<div class="services-item">
+						<div id="adaptivity" class="services-item__icon"></div>
+						<span class="services-item__text">Адаптивная вёрстка под все браузеры и устройства</span>
+					</div>
+					<div class="services-item">
+						<div id="frontend" class="services-item__icon"></div>
+						<span class="services-item__text">Frontend–разработка и программирование</span>
+					</div>
+					<div class="services-item">
+						<div id="support" class="services-item__icon"></div>
+						<span class="services-item__text">Исправление и доработка существующей вёрстки</span>
+					</div>
+				</div>
+				<button class="button">Узнать больше</button>
+			</div>
+		</div>
+		<div class="third-screen" id="third-screen">
+			<div class="fixed-container">
+				<h3>Пример моих работ</h3>
+				<!--Слайдер-->
+				<div class="slider">
+					<div class="slider__item">
+						<img data-lazy="img/ex1.jpg">
+						<span class="slider__text">Сайт психолога Веры Антоновой</span>
+					</div>
+					<div class="slider__item">
+						<img data-lazy="img/ex2.jpg">
+						<span class="slider__text">Сайт магазина детской одежды</span>
+					</div>
+					<div class="slider__item">
+						<img data-lazy="img/ex3.jpg">
+						<span class="slider__text">Сайт магазина «Рыболов»</span>
+					</div>
+					<div class="slider__item">
+						<img data-lazy="img/ex2.jpg">
+						<span class="slider__text">Сайт магазина детской одежды</span>
+					</div>
+				</div>
+				<button class="button">Узнать больше</button>
+			</div>
+		</div>
+		<div class="fourth-screen" id="fourth-screen">
+			<div class="fixed-container">
+				<div class="fourth-screen__title">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*</div>
+				<div class="fourth-screen__descriptor">* Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально, в&nbsp;зависимости от сложности задач.</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="fixed-container">
+			<nav class="menu">
+				<div class="menu__items"><a href="#second-screen">Услуги</a></div>
+				<div class="menu__items"><a href="#third-screen">Портфолио</a></div>
+				<div class="menu__items"><a href="#fourth-screen">Стоимость</a></div>
+			</nav>
+			<div class="contact">
+				<div class="contact__item"><div class="material-icons">phone</div>+7 (499) 995-55-555</div>
+				<div class="contact__item"><div class="material-icons">email</div>info@agency.ru</div>
+			</div>
+			<div class="calltoaction">
+				<button class="phone-call__call">Заказать звонок</button>
+				<div class="social">
+					<a href="https://vk.com/nikitatischenkomh" target="_blank">
+						<div class="social__icon" id="vk"></div>
+					</a>
+					<a href="" target="_blank">
+						<div class="social__icon" id="fb"></div>
+					</a>
+					<a href="" target="_blank">
+						<div class="social__icon" id="tw"></div>
+					</a>
+					<a href="https://www.instagram.com/tinkml" target="_blank">
+						<div class="social__icon" id="in"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--Подключение JS-->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<!--jquery breakpoints https://github.com/xoxco/breakpoints-->
+	<script src="js/breakpoints.js"></script>
+	<!--Slider for third screen-->
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
