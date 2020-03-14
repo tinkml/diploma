@@ -584,7 +584,22 @@ a {
   max-height: 450px;
   padding: 85px 0;
   margin: 60px 0;
-  background: linear-gradient(to right top, #ff8f5a, #ff2f96);
+  background: linear-gradient(-45deg, #ff8f5a, #ff2f96);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+/*Анимация фона - эффект перелива*/
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .fourth-screen .fixed-container {
