@@ -987,8 +987,8 @@ footer .fixed-container {
       .title-about-me {
         font-size: 16px;
         min-width: 100%;
-        width: 298px; /*Фикс ширины - тест бага*/
-        height: 181px;/*Фикс высоты - тест бага*/
+        width: 390px;
+        height: 203px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1072,6 +1072,11 @@ footer .fixed-container {
     font-size: 30px;
   }
 
+  .title-about-me {
+    width: 298px;
+    height: 181px;
+  }
+
   /*Изменено расположение блока с элементами анимации*/
   .animation-container {
     top: 30%;
@@ -1121,6 +1126,11 @@ footer .fixed-container {
 }
 
 @media (max-width: 350px) {
+  .title-about-me {
+    width: 280px; /*Фикс ширины - тест бага*/
+    height: 200px;/*Фикс высоты - тест бага*/
+  }
+
   /*Изменено расположение блока с элементами анимации*/
   .animation-container {
     top: 30%;
