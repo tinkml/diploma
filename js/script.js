@@ -12,7 +12,8 @@ $(function(){
 	$('nav a').click(function(event){
 		event.preventDefault();
 		let href = $(this).attr('href');
-		let offset = $(href).offset().top;
+		let headerHeight = $('.header').height();//высота хедера, для исправления наезда на блок
+		let offset = $(href).offset().top - headerHeight;
 		$('body,html').animate({
 			scrollTop: offset,
 		}, 700);
