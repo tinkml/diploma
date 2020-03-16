@@ -7,11 +7,23 @@ $(function(){
 		$('body').toggleClass('lock');
 	});
 
+
+	//Плавный скролл по нажатию на элементы навигации
+	$('nav a').click(function(event){
+		event.preventDefault();
+		let href = $(this).attr('href');
+		let offset = $(href).offset().top;
+		$('body,html').animate({
+			scrollTop: offset,
+		}, 700);
+	});
+
 	$('.button,.phone-call__call').click(function(){
 		//Отключение скролла
 		$('body').toggleClass('lock');
 		//Поп-ап окно при нажатии на кнопку
 		$('.popup-container').fadeToggle();
+		
 	});
 
 	$('.popup-container,.popup__del').click(function(event){
