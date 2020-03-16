@@ -786,16 +786,6 @@ footer .fixed-container {
     font-size: 49px;
   }
 
-  /*.title-about-me {
-    font-size: 20px;
-    color: #8993ad;
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-    width: 100%;
-    min-width: 320px;
-  }*/
-
   .title-about-me {
     font-size: 20px;
     color: #8993ad;
@@ -962,13 +952,8 @@ footer .fixed-container {
     background-size: 462px auto;
   }
 
-      /*.first-screen .fixed-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       } */
-
        .first-screen .fixed-container {
+        height: 499px; /*Фикс высоты - тест бага*/
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -980,27 +965,6 @@ footer .fixed-container {
             -ms-flex-align: center;
                 align-items: center;
        }        
-
-      /*#img {
-        width: 240px;
-        height: 317.64px;
-        display: flex;
-        justify-content: center;
-        order: -1;
-      }
-
-      #img img {
-        height: auto;
-    }
-
-      .title-about-me {
-        font-size: 16px;
-        min-width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }*/
 
       #img {
         width: 240px;
@@ -1023,6 +987,8 @@ footer .fixed-container {
       .title-about-me {
         font-size: 16px;
         min-width: 100%;
+        width: 298px; /*Фикс ширины - тест бага*/
+        height: 181px;/*Фикс высоты - тест бага*/
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1034,6 +1000,8 @@ footer .fixed-container {
             -ms-flex-align: center;
                 align-items: center;
         text-align: center;
+        position: relative;
+        bottom: 0;
       }
 
     /*Изменено расположение блока с элементами анимации*/
