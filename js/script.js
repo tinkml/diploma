@@ -4,7 +4,13 @@ $(function(){
 		//Мобильное меню
 		$('.header__burger,.header__menu').toggleClass('active');
 		//Отключение скролла
-		$('body').toggleClass('lock');
+		//$('body').toggleClass('lock');
+	});
+
+	//Закрывает мобильное меню при нажатии на пункт меню
+	$('nav a').click(function(event){
+		event.preventDefault();
+		$('.header__burger,.header__menu').removeClass('active');
 	});
 
 
@@ -13,13 +19,14 @@ $(function(){
 		event.preventDefault();
 		let href = $(this).attr('href');
 		let headerHeight = $('.header').height();//высота хедера, для исправления наезда на блок
-		let offset = $(href).offset().top - headerHeight;
+		let offset = $(href).offset().top - headerHeight;//переходим на отступ до блока - отъезжаем на высоту хедера
 		$('body,html').animate({
 			scrollTop: offset,
 		}, 700);
 	});
 
 	$('.button,.phone-call__call').click(function(){
+		event.preventDefault();
 		//Отключение скролла
 		$('body').toggleClass('lock');
 		//Поп-ап окно при нажатии на кнопку
