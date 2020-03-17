@@ -1108,7 +1108,7 @@ footer .fixed-container {
           }
 
   .fourth-screen {
-    margin: 0 0 60px;
+    margin: 0 0 20px;
   }
 
   .fourth-screen__title {
@@ -1119,9 +1119,26 @@ footer .fixed-container {
     font-size: 15px;
   }
 
+
+  /*Центрирование элементов футера*/
+  footer .menu {
+    padding-top: 20px;
+    margin: 0 auto;/*Центрирование относительно фикс контейнер*/
+    width: 251px;/*Для выключка по левому краю с calltoaction*/
+  }
+
   .contact {
     color: #8993ad;
     font-size: 20px;
+    padding: 20px 0;
+    margin: 0 auto; /*Центрирование относительно фикс контейнер*/
+    width: 251px; /*Для выключка по левому краю с calltoaction*/
+  }
+
+  /*Центрирование блока по центру*/
+  .calltoaction {
+    padding: 0; /*Чтобы не конфликтовал с педингом фикс контейнера*/
+    margin: 0 auto; /*Центрирование относительно фикс контейнер*/
   }
 }
 
