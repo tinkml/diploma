@@ -25,16 +25,16 @@ $(function(){
 		}, 700);
 	});
 
-	$('.button,.phone-call__call').click(function(){
+	$('.phone-call__call').click(function(event){
 		event.preventDefault();
 		//Отключение скролла
-		$('body').toggleClass('lock');
+		//$('body').toggleClass('lock');
 		//Поп-ап окно при нажатии на кнопку
 		$('.popup-container').fadeToggle();
-		
 	});
 
-	$('.popup-container,.popup__del').click(function(event){
+	$('.popup-container,.popup__del button').click(function(event){
+		event.preventDefault();
 		//Закрытие поп-ап окна
 		if(event.target == this) {
 		$('body').toggleClass('lock');

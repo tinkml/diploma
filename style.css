@@ -80,12 +80,11 @@ html, body {
 }
 
 /*Блокировка скролла при открытом меню*/
-  body.lock {
+  /*body.lock {
     overflow: hidden;
-    /*Для мобильных устройств*/
     position: fixed;
     width: 100%;
-  }
+  }*/
 
 h2 {
   font-size: 72px;
@@ -140,26 +139,35 @@ a {
 /*Всплывающее окно*/
 .popup {
   width: 300px;
-  height: 350px;
+  height: 400px;
   padding: 10px;
-  margin: 0 auto;
+  margin: 3% auto;
   background-color: #ffffff;
   box-shadow: 0 2px 5px 0 #11111130;
-  position: relative;
-  top: 15%;
+  /*position: relative;
+  top: 15%;*/
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-/*Кнопка удаления всплывающего окна*/
+/*Выравнивание кнопки закрыть по правому краю*/
 .popup__del {
+  width: 100%;
+  text-align: end;
+}
+
+/*Кнопка удаления всплывающего окна*/
+.popup__del button{
   width: 24px;
   height: 24px;
-  position: absolute;
-  right: 0;
   background-color: white;
   cursor: pointer;
+}
+
+/*Удаление отступа по умолчанию*/
+.popup__del .material-icons {
+  margin: 0;
 }
 
 /*Иконка телефона по центру*/
