@@ -248,7 +248,8 @@ a {
 	padding: 25px;
 	margin: 3% auto;
 	text-align: center;
-	vertical-align: 600px;
+  vertical-align: 600px;
+  box-shadow: 0 2px 5px 0 #11111130;
 }
 
 /*Выравнивание кнопки закрытие по правому краю*/
@@ -327,7 +328,6 @@ a {
 
 /*Кнопка отправить данные формы*/
 .form__submit.button {
-	width: 85%;
 	margin: 25px auto;
 }
 
@@ -362,11 +362,6 @@ a {
 /*Фиксированный хедер - скрытие значка мобильного меню*/
 .header__burger{
   display: none;
-}
-
-/*Контейнер меню, к которому будет привязываться анимация*/
-.header__menu{
-  
 }
 
 /*Строчное расположение элементов меню*/
@@ -498,7 +493,7 @@ a {
       width: 280px;
       height: 60px;
       background: #ffffff;
-      left: -101%; /*Скрытие задвижки*/
+      left: -140%; /*Скрытие задвижки*/
       transition: all 0.6s ease 0s;
       z-index: -1;
     }
@@ -1186,6 +1181,10 @@ footer .fixed-container {
 
   h3 {
     font-size: 30px;
+  }
+
+  .form__icon {
+    margin: 0 auto;
   }
 
   .title-about-me {
