@@ -53,6 +53,55 @@ $(function(){
 		$('.get-contact__submit').text('done');
 	});
 
+	//Открытие основной формы
+	$('.button').click(function(event){
+		event.preventDefault();
+		//Поп-ап окно при нажатии на кнопку
+		$('.form__container').show();
+	});
+
+	//Закрытие основной формы
+	$('.form__close button,.form__container').click(function(event){
+		event.preventDefault();
+		if(event.target == this) {
+			$('.form__container').hide();
+		}
+	});
+
+	//Маска для номер телефона
+	$('input[type="tel"]').inputmask({"mask": "8 (999) 999-9999"});
+
+	//Маска для адреса электронной почты
+	$('input[type="email"]').inputmask({
+	    mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
+	    greedy: false,
+	    onBeforePaste: function (pastedValue, opts) {
+	      pastedValue = pastedValue.toLowerCase();
+	      return pastedValue.replace("mailto:", "");
+	    },
+	    definitions: {
+	      '*': {
+	        validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~\-]",
+	        casing: "lower"
+	      }
+	    }
+  	});
+
+	//Валидация формы
+	$( ".form" ).validate({
+		errorPlacement(error, element){
+			return true;
+		},
+		rules: {
+			name: "required",
+			phone: "required",
+			email: {
+			  required: true,
+			  email: true
+			}
+		},
+	});
+
 	$('.animation-container__item').addClass('active');
 
 	$('.slider').slick({

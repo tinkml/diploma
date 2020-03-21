@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+	<!--Вспомогательная форма захвата-->
 	<div class="popup-container">
 		<div class="popup">
 			<div class="popup__del">
@@ -21,6 +22,29 @@
 				<button class="get-contact__submit material-icons">send</button>
 			</div>
 		</div>
+	</div>
+	<!--Основная форма захвата-->
+	<div class="form__container">
+		<form class="form">
+			<div class="form__close">
+				<button class="material-icons">clear</button>
+			</div>
+			<div class="form__icon"><img src="img/phone.png" alt="phone"></div>
+			<div class="form__title">Оставьте свой номер телефона и я перезвоню вам в ближайшее время!</div>
+			<div class="form__name">
+				<span>Ваше имя</span>
+				<input type="text" name="name">
+			</div>
+			<div class="form__phone">
+				<span>Ваш номер телефона</span>
+				<input type="tel" name="phone">
+			</div>
+			<div class="form__mail">
+				<span>Ваш e-mail адресс</span>
+				<input type="email" name="email">
+			</div>
+			<button class="form__submit button" type="submit">Оставить заявку</button>
+		</form>
 	</div>
 	<header class="header">
 		<div class="fixed-container">
@@ -156,6 +180,11 @@
 	</footer>
 	<!--Подключение JS-->
 	<script src="js/jquery-3.4.1.min.js"></script>
+	<!--Подключение валидации формы-->
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/additional-methods.js"></script>
+	<!--Подключение маси для инпутов формы-->
+	<script src="js/jquery.inputmask.min.js"></script>
 	<!--Slider for third screen-->
 	<script src="js/slick.min.js"></script>
 	<!--Подключение анимации для фона-->
