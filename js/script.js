@@ -87,7 +87,7 @@ $(function(){
 	    }
   	});
 
-	//Валидация формы
+	//Валидация основной формы
 	$( ".form" ).validate({
 		errorPlacement(error, element){
 			return true;
@@ -99,6 +99,16 @@ $(function(){
 			  required: true,
 			  email: true
 			}
+		},
+	});
+
+	//Валидация формы обратного звонка
+	$( ".popup" ).validate({
+		errorPlacement(error, element){
+			return true;
+		},
+		rules: {
+			phone: "required",
 		},
 	});
 
